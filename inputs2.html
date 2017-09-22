@@ -26,37 +26,45 @@
 <div class="row">
   <div class="col-sm-4">
       <ul>
-        <li> <a href="forms.html"></a>Forms</li>
+        <li> <a href="inputs2.html"></a>Inputs 2</li>
         <li><a href="index.html">Home</a> </li>
       </ul>
   </div>
 
   <div class="container">
-  <h2>Vertical (basic) form</h2>
-  <form action="/action_page.php">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  <h3>Input Groups</h3>
+  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
+  <p>The .input-group-addon class attaches an icon or help text next to the input field.</p>
+  
+  <form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
     </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Text</span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  <br>
+
+  <p>It can also be used on the right side of the input:</p>
+  <form>
+    <div class="input-group">
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
+    </div>
+    <div class="input-group">
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    </div>
   </form>
 </div>
-  </div>
-
-<div class="container">
-  <h3>Navbar Forms</h3>
-  <p>Use the .navbar-form class to vertically align form elements (same padding as links) inside the navbar.</p>
-  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
-  <p>The .input-group-btn class attaches a button next to an input field. This is often used as a search bar:</p>
-</div>
-  </div>
 
   <div class="row">
   <div class="col-sm-12">
